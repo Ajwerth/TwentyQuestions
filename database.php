@@ -15,7 +15,8 @@ function database_function() {
 
     $sql="CREATE TABLE $tablename (
         id mediumint(9) NOT NULL AUTO_INCREMENT,
-
+        time datetime DEFAULT '0000-00-00 00:00:00' NOT NULL,
+        
     ) $charset_collate;";
 
 require_once( ABSPATH . "/wp-admin/includes/upgrade.php");
@@ -24,3 +25,5 @@ dbdelta($sql);
 add_option( 'aw_db_version', $aw_db_version);
 
 }
+
+//Next Step Add Form Elements into DB
