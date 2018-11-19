@@ -4,7 +4,7 @@
 function form_shortcode() {
     
     ?> 
-    <form action="">
+    <form method="post" action="/wp-content/plugins/twentyquestions/process-form.php">
         <div class="questions-main">
             <div id="question-1"  class="question">
                 <h4>Did you ever lose time from work or school due to gambling?</h4>
@@ -131,7 +131,7 @@ function form_shortcode() {
                 <input type="checkbox" id="twentyone-video">Video Machines</input>
                 <input type="checkbox" id="twentyone-other">Other</input>
             </div>
-            <div class="question">
+            <div id="question-twentytwo" class="question">
                 <label for="prefered">Gambling of Choice</label>
                 <select name="prefered" id="prefered">
                     <option type="checkbox" id="twentyone-bingo">Bingo</option>
@@ -149,47 +149,53 @@ function form_shortcode() {
                     <option type="checkbox" id="twentyone-other">Other</>
                 </select>
             </div>
-            <label for="county">County</label>
-            <select name="county" id="county">
-                <option value="Morris" selected="selected">Morris</option>
-                <option value="Bergen">Bergen</option>
-                <option value="Union">Union</option>
-                <option value="Middlesex">Middlesex</option>
-                <option value="Mercer">Mercer</option>
-                <option value="Burlington">Burlington</option>
-                <option value="Essex">Essex</option>
-                <option value="Somerset">Somerset</option>
-                <option value="Ocean">Ocean</option>
-                <option value="Monmouth">Monmouth</option>
-                <option value="Hunterdon">Hunterdon</option>
-                <option value="Atlantic">Atlantic</option>
-                <option value="Gloucester">Gloucester</option>
-                <option value="Warren">Warren</option>
-                <option value="Camden">Camden</option>
-                <option value="Hudson">Hudson</option>
-                <option value="Passaic">Passaic</option>
-                <option value="Cumberland">Cumberland</option>
-                <option value="Capemay">Cape May</option>
-                <option value="Salem">Salem</option>
-                <option value="Sussex">Sussex</option>
-            </select>
-            <label for="age">Age</label>
-            <select name="age" id="age">
-                <option value="under18">18 and Under</option>
-                <option value="19to25">19-25</option>
-                <option value="26to55">26-55</option>
-                <option value="56over">56-Over</option>
-            </select>
-            <label for="race">Race</label>
-            <select name="race" id="race">
-                <option value="caucasian" selected="selected">Caucasian</option>
-                <option value="african">African American</option>
-                <option value="hispanic">Hispanic</option>
-                <option value="asian">Asian</option>
-                <option value="native">Native American</option>
-                <option value="other">Other</option>
-            </select>
-            <div id='radio-gender' class='radio'>
+            <div id="questions-twentythree" class="question"></div>
+                <label for="county">County</label>
+                <select name="county" id="county">
+                    <option value="Morris" selected="selected">Morris</option>
+                    <option value="Bergen">Bergen</option>
+                    <option value="Union">Union</option>
+                    <option value="Middlesex">Middlesex</option>
+                    <option value="Mercer">Mercer</option>
+                    <option value="Burlington">Burlington</option>
+                    <option value="Essex">Essex</option>
+                    <option value="Somerset">Somerset</option>
+                    <option value="Ocean">Ocean</option>
+                    <option value="Monmouth">Monmouth</option>
+                    <option value="Hunterdon">Hunterdon</option>
+                    <option value="Atlantic">Atlantic</option>
+                    <option value="Gloucester">Gloucester</option>
+                    <option value="Warren">Warren</option>
+                    <option value="Camden">Camden</option>
+                    <option value="Hudson">Hudson</option>
+                    <option value="Passaic">Passaic</option>
+                    <option value="Cumberland">Cumberland</option>
+                    <option value="Capemay">Cape May</option>
+                    <option value="Salem">Salem</option>
+                    <option value="Sussex">Sussex</option>
+                </select>
+            </div>
+            <div id="question-twentyfour" class="question">
+                <label for="age">Age</label>
+                <select name="age" id="age">
+                    <option value="under18">18 and Under</option>
+                    <option value="19to25">19-25</option>
+                    <option value="26to55">26-55</option>
+                    <option value="56over">56-Over</option>
+                </select>
+            </div>
+            <div id="question-twentyfive" class="question">
+                <label for="race">Race</label>
+                <select name="race" id="race">
+                    <option value="caucasian" selected="selected">Caucasian</option>
+                    <option value="african">African American</option>
+                    <option value="hispanic">Hispanic</option>
+                    <option value="asian">Asian</option>
+                    <option value="native">Native American</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div id='questions-twentysix' class='radio'>
                 <label for='radio-gender'>Sex</label>
                 <div class='radio-input'>
                     <input id='radio-1' type="radio">
@@ -201,6 +207,7 @@ function form_shortcode() {
                 </div>
             </div>
         </div>
+        <input type="submit">
     </form>
     <?php
 }
