@@ -25,12 +25,8 @@ if(isset($_POST)){
     $q_18 = isset($_POST['q-eightteen-yes']) ? 1 : 0;
     $q_19 = isset($_POST['q-nineteen-yes']) ? 1 : 0; 
     $q_20 = isset($_POST['q-twenty-yes']) ? 1 : 0;
-    $q_21 = isset($_POST['q-twentyone-yes']) ? 1 : 0;
-    $q_22 = isset($_POST['q-twentytwo-yes']) ? 1 : 0;
-
-    $wpdb->insert(
-    $table_name,
-    array(
+    var_dump($q_1, $q_20);
+    $wpdb->insert( $table_name, array(
         'time_stamp' => $timestamp,
         'question_one' => $q_1,
         'question_two' => $q_2,
@@ -51,16 +47,9 @@ if(isset($_POST)){
         'question_seventeen' => $q_17,
         'question_eightteen' => $q_18,
         'question_nineteen' => $q_19,
-        'question_twenty' => $q_20,
-        'question_twentyone' => $q_21,
-        'question_twentytwo' => $q_22,
-        'question_twentythree' => $q_23,
-        'question_twentyfour' => $q_24,
-        'question_twentyfive' => $q_25,
-        'question_twentysix' => $q_26,
-        'question_twentyseven' => $q_27
+        'question_twenty' => $q_20
     ) );
     echo "Working";
 }else{
-    echo "Shits Fucked";
+    echo "Something's Gone Wrong Mate!";
 };

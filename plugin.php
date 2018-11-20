@@ -10,5 +10,4 @@
 include(plugin_dir_path(__FILE__) . "/database.php");
 register_activation_hook(__FILE__, "database_function");
 require_once(plugin_dir_path(__FILE__) . "/form.php");
-include(plugin_dir_path(__FILE__) . "/process-form.php");
 

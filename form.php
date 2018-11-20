@@ -2,7 +2,6 @@
 
 // Add Shortcode
 function form_shortcode() {
-    
     ?> 
     <form method="post" action="/wp-content/plugins/twentyquestions/process-form.php">
         <div class="questions-main">
@@ -107,7 +106,7 @@ function form_shortcode() {
                 <input type="checkbox" id="q-twenty-no" name="q-twenty-no" value="no" class="messageCheckbox">No</input>
             </div>
         </div>
-        <div class="opptional">
+        <!-- <div class="opptional">
             <label for="option">Could you answer other optional questions so we can help you?</label>
             <select name="option" id="option">
                 <option value="yes">Yes</option>
@@ -206,7 +205,7 @@ function form_shortcode() {
                     <label for="radio-2">Female</label>
                 </div>
             </div>
-        </div>
+        </div> -->
         <input type="submit">
     </form>
     <?php
