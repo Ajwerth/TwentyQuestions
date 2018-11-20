@@ -4,7 +4,7 @@
 function form_shortcode() {
     
     ?> 
-    <form action="">
+    <form method="post" action="/wp-content/plugins/twentyquestions/process-form.php">
         <div class="questions-main">
             <div id="question-1"  class="question">
                 <h4>Did you ever lose time from work or school due to gambling?</h4>
@@ -207,6 +207,7 @@ function form_shortcode() {
                 </div>
             </div>
         </div>
+        <input type="submit">
     </form>
     <?php
 }
