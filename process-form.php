@@ -3,7 +3,7 @@ require($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');
 
 if(isset($_POST)){
     global $wpdb, $table_prefix;
-    $table_name = $wpdb->prefix . 'form_submission';
+    $table_name = $wpdb->prefix . 'form_submission'
     $timestamp = current_time( 'mysql' );
     $q_1 = isset($_POST['q-one-yes']) ? 1 : 0;
     $q_2 = isset($_POST['q-two-yes']) ? 1 : 0;
@@ -59,8 +59,7 @@ if(isset($_POST)){
         'question_twentyfive' => $q_25,
         'question_twentysix' => $q_26,
         'question_twentyseven' => $q_27
-    )
-    );
+    ) );
     echo "Working";
 }else{
     echo "Shits Fucked";
