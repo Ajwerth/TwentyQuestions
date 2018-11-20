@@ -1,7 +1,4 @@
 <?php 
-
-
-
 global $aw_db_version;
 $aw_db_version = "1.0";
 
