@@ -1,5 +1,5 @@
-<?php
-require_once( '../../../wp-load.php' );
+<?php 
+require($_SERVER['DOCUMENT_ROOT'].'/wp-load.php');
 
 if(isset($_POST)){
     global $wpdb, $table_prefix;
