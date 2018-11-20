@@ -131,7 +131,7 @@ function form_shortcode() {
                 <input type="checkbox" id="twentyone-video">Video Machines</input>
                 <input type="checkbox" id="twentyone-other">Other</input>
             </div>
-            <div class="question">
+            <div id="question-twentytwo" class="question">
                 <label for="prefered">Gambling of Choice</label>
                 <select name="prefered" id="prefered">
                     <option type="checkbox" id="twentyone-bingo">Bingo</option>
@@ -149,47 +149,53 @@ function form_shortcode() {
                     <option type="checkbox" id="twentyone-other">Other</>
                 </select>
             </div>
-            <label for="county">County</label>
-            <select name="county" id="county">
-                <option value="Morris" selected="selected">Morris</option>
-                <option value="Bergen">Bergen</option>
-                <option value="Union">Union</option>
-                <option value="Middlesex">Middlesex</option>
-                <option value="Mercer">Mercer</option>
-                <option value="Burlington">Burlington</option>
-                <option value="Essex">Essex</option>
-                <option value="Somerset">Somerset</option>
-                <option value="Ocean">Ocean</option>
-                <option value="Monmouth">Monmouth</option>
-                <option value="Hunterdon">Hunterdon</option>
-                <option value="Atlantic">Atlantic</option>
-                <option value="Gloucester">Gloucester</option>
-                <option value="Warren">Warren</option>
-                <option value="Camden">Camden</option>
-                <option value="Hudson">Hudson</option>
-                <option value="Passaic">Passaic</option>
-                <option value="Cumberland">Cumberland</option>
-                <option value="Capemay">Cape May</option>
-                <option value="Salem">Salem</option>
-                <option value="Sussex">Sussex</option>
-            </select>
-            <label for="age">Age</label>
-            <select name="age" id="age">
-                <option value="under18">18 and Under</option>
-                <option value="19to25">19-25</option>
-                <option value="26to55">26-55</option>
-                <option value="56over">56-Over</option>
-            </select>
-            <label for="race">Race</label>
-            <select name="race" id="race">
-                <option value="caucasian" selected="selected">Caucasian</option>
-                <option value="african">African American</option>
-                <option value="hispanic">Hispanic</option>
-                <option value="asian">Asian</option>
-                <option value="native">Native American</option>
-                <option value="other">Other</option>
-            </select>
-            <div id='radio-gender' class='radio'>
+            <div id="questions-twentythree" class="question"></div>
+                <label for="county">County</label>
+                <select name="county" id="county">
+                    <option value="Morris" selected="selected">Morris</option>
+                    <option value="Bergen">Bergen</option>
+                    <option value="Union">Union</option>
+                    <option value="Middlesex">Middlesex</option>
+                    <option value="Mercer">Mercer</option>
+                    <option value="Burlington">Burlington</option>
+                    <option value="Essex">Essex</option>
+                    <option value="Somerset">Somerset</option>
+                    <option value="Ocean">Ocean</option>
+                    <option value="Monmouth">Monmouth</option>
+                    <option value="Hunterdon">Hunterdon</option>
+                    <option value="Atlantic">Atlantic</option>
+                    <option value="Gloucester">Gloucester</option>
+                    <option value="Warren">Warren</option>
+                    <option value="Camden">Camden</option>
+                    <option value="Hudson">Hudson</option>
+                    <option value="Passaic">Passaic</option>
+                    <option value="Cumberland">Cumberland</option>
+                    <option value="Capemay">Cape May</option>
+                    <option value="Salem">Salem</option>
+                    <option value="Sussex">Sussex</option>
+                </select>
+            </div>
+            <div id="question-twentyfour" class="question">
+                <label for="age">Age</label>
+                <select name="age" id="age">
+                    <option value="under18">18 and Under</option>
+                    <option value="19to25">19-25</option>
+                    <option value="26to55">26-55</option>
+                    <option value="56over">56-Over</option>
+                </select>
+            </div>
+            <div id="question-twentyfive" class="question">
+                <label for="race">Race</label>
+                <select name="race" id="race">
+                    <option value="caucasian" selected="selected">Caucasian</option>
+                    <option value="african">African American</option>
+                    <option value="hispanic">Hispanic</option>
+                    <option value="asian">Asian</option>
+                    <option value="native">Native American</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div id='questions-twentysix' class='radio'>
                 <label for='radio-gender'>Sex</label>
                 <div class='radio-input'>
                     <input id='radio-1' type="radio">
@@ -205,3 +211,62 @@ function form_shortcode() {
     <?php
 }
 add_shortcode( 'TwentyQuestions', 'form_shortcode' );
+
+if ( isset( $_POST['submit'] ) ){
+    $q_1 = isset($_POST['q-one-yes']) ? 1 : 0;
+    $q_2 = isset($_POST['q-two-yes']) ? 1 : 0;
+    $q_3 = isset($_POST['q-three-yes']) ? 1 : 0;
+    $q_4 = isset($_POST['q-four-yes']) ? 1 : 0;
+    $q_5 = isset($_POST['q-five-yes']) ? 1 : 0;
+    $q_6 = isset($_POST['q-six-yes']) ? 1 : 0;
+    $q_7 = isset($_POST['q-seven-yes']) ? 1 : 0;
+    $q_8 = isset($_POST['q-eight-yes']) ? 1 : 0;
+    $q_9 = isset($_POST['q-nine-yes']) ? 1 : 0;
+    $q_10 = isset($_POST['q-ten-yes']) ? 1 : 0;
+    $q_11 = isset($_POST['q-eleven-yes']) ? 1 : 0;
+    $q_12 = isset($_POST['q-twelve-yes']) ? 1 : 0;
+    $q_13 = isset($_POST['q-thirteen-yes']) ? 1 : 0;
+    $q_14 = isset($_POST['q-fourteen-yes']) ? 1 : 0;
+    $q_15 = isset($_POST['q-fifteen-yes']) ? 1 : 0;
+    $q_16 = isset($_POST['q-sixteen-yes']) ? 1 : 0;
+    $q_17 = isset($_POST['q-seventeen-yes']) ? 1 : 0;
+    $q_18 = isset($_POST['q-eightteen-yes']) ? 1 : 0;
+    $q_19 = isset($_POST['q-nineteen-yes']) ? 1 : 0;
+    $q_20 = isset($_POST['q-twenty-yes']) ? 1 : 0;
+    $q_21 = isset($_POST['q-twentyone-yes']) ? 1 : 0;
+    $q_22 = isset($_POST['q-twentytwo-yes']) ? 1 : 0;
+}
+
+global $wpdb;
+$tablename = $wpdb->prefix.'form_submission';
+
+$wpdb->insert( $tablename, array(
+'question_one' => $_POST['question_one'],
+'question_two' => $_POST['question_two'],
+'question_three' => $_POST['question_three'],
+'question_four' => $_POST['question_four'],
+'question_five' => $_POST['question_five'],
+'question_six' => $_POST['question_six'],
+'question_seven' => $_POST['question_seven'],
+'question_eight' => $_POST['question_eight'],
+'question_nine' => $_POST['question_nine'],
+'question_ten' => $_POST['question_ten'],
+'question_eleven' => $_POST['question_eleven'],
+'question_twelve' => $_POST['question_twelve'],
+'question_thirteen' => $_POST['question_thirteen'],
+'question_fourteen' => $_POST['question_fourteen'],
+'question_fifteen' => $_POST['question_fifteen'],
+'question_sixteen' => $_POST['question_sixteen'],
+'question_seventeen' => $_POST['question_seventeen'],
+'question_eightteen' => $_POST['question_eightteen'],
+'question_nineteen' => $_POST['question_nineteen'],
+'question_twenty' => $_POST['question_twenty'],
+'question_twentyone' => $_POST['question_twentyone'],
+'question_twentytwo' => $_POST['question_twentytwo'],
+'question_twentythree' => $_POST['question_twentythree'],
+'question_twentyfour' => $_POST['question_twentyfour'],
+'question_twentyfive' => $_POST['question_twentyfive'],
+'question_twentysix' => $_POST['question_twentysix'],
+'question_twentyseven' => $_POST['question_twentyseven'],),
+   array( '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s' ) 
+);
