@@ -106,7 +106,7 @@ function form_shortcode() {
                 <input type="checkbox" id="q-twenty-no" name="q-twenty-no" value="no" class="messageCheckbox">No</input>
             </div>
         </div>
-        <!-- <div class="opptional">
+        <div class="opptional">
             <label for="option">Could you answer other optional questions so we can help you?</label>
             <select name="option" id="option">
                 <option value="yes">Yes</option>
@@ -133,19 +133,19 @@ function form_shortcode() {
             <div id="question-twentytwo" class="question">
                 <label for="prefered">Gambling of Choice</label>
                 <select name="prefered" id="prefered">
-                    <option type="checkbox" id="twentyone-bingo">Bingo</option>
-                    <option type="checkbox" id="twentyone-cards">Cards</option>
-                    <option type="checkbox" id="twentyone-poker">Casino - Poker</option>
-                    <option type="checkbox" id="twentyone-slots">Casino - Slots</option>
-                    <option type="checkbox" id="twentyone-table">Casino - Table Games</option>
-                    <option type="checkbox" id="twentyone-dice">Dice</option>
-                    <option type="checkbox" id="twentyone-horse">Horse Racing</option>
-                    <option type="checkbox" id="twentyone-internet">Internet Gambling</option>
-                    <option type="checkbox" id="twentyone-lotteries">Lotteries</option>
-                    <option type="checkbox" id="twentyone-sports">Sports Betting</option>
-                    <option type="checkbox" id="twentyone-stock">Stockmarket</option>
-                    <option type="checkbox" id="twentyone-video">Video Machines</option>
-                    <option type="checkbox" id="twentyone-other">Other</>
+                    <option id="twentyone-bingo">Bingo</option>
+                    <option id="twentyone-cards">Cards</option>
+                    <option id="twentyone-poker">Casino - Poker</option>
+                    <option id="twentyone-slots">Casino - Slots</option>
+                    <option id="twentyone-table">Casino - Table Games</option>
+                    <option id="twentyone-dice">Dice</option>
+                    <option id="twentyone-horse">Horse Racing</option>
+                    <option id="twentyone-internet">Internet Gambling</option>
+                    <option id="twentyone-lotteries">Lotteries</option>
+                    <option id="twentyone-sports">Sports Betting</option>
+                    <option id="twentyone-stock">Stockmarket</option>
+                    <option id="twentyone-video">Video Machines</option>
+                    <option id="twentyone-other">Other</>
                 </select>
             </div>
             <div id="questions-twentythree" class="question"></div>
@@ -194,18 +194,14 @@ function form_shortcode() {
                     <option value="other">Other</option>
                 </select>
             </div>
-            <div id='questions-twentysix' class='radio'>
-                <label for='radio-gender'>Sex</label>
-                <div class='radio-input'>
-                    <input id='radio-1' type="radio">
-                    <label for="radio-1">Male</label>
-                </div>
-                <div class='radio-input'>
-                    <input id='radio-2' type="radio">
-                    <label for="radio-2">Female</label>
-                </div>
+            <div id='questions-twentysix' class='gender'>
+                <label for='gender'>Gender</label>
+                <select name="gender" id="gender">
+                    <option value="Female">Female</option>
+                    <option value="Male">Male</option>
+                </select>
             </div>
-        </div> -->
+        </div>
         <input type="submit">
     </form>
     <?php

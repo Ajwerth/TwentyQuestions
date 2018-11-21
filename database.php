@@ -34,13 +34,11 @@ function database_function() {
         question_nineteen int(1) NULL,
         question_twenty int(1) NULL,
         question_twentyone int(1) NULL,
-        question_twentytwo int(1) NULL,
-        question_twentythree int(1) NULL,
-        question_twentyfour int(1) NULL,
-        question_twentyfive int(1) NULL,
-        question_twentysix int(1) NULL,
-        question_twentyseven int(1) NULL,
-        question_twentyeight int(1) NULL,
+        question_twentytwo varchar(50) NOT NULL,
+        question_twentythree varchar(50) NOT NULL,
+        question_twentyfour varchar(50) NOT NULL,
+        question_twentyfive varchar(50) NOT NULL,
+        question_twentysix varchar(50) NULL,
         PRIMARY KEY (id)
     ) $charset_collate;";
 

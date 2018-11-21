@@ -29,7 +29,11 @@ if(isset($_POST)){
         'question_nineteen' => isset($_POST['q-nineteen-yes']) ? 1 : 0, 
         'question_twenty' => isset($_POST['q-twenty-yes']) ? 1 : 0,
         'question_twentyone' => isset($_POST['q-twenty-yes']) ? 1 : 0,
-        'question_twentytwo' => isset($_POST['county']) VALUES ('county'),
+        'question_twentytwo' => $_POST['prefered'],
+        'question_twentythree' => $_POST['county'],
+        'question_twentyfour' => $_POST['age'],
+        'question_twentyfive' => $_POST['race'],
+        'question_twentysix' => $_POST['gender'],
     ) );
     echo "Working";
 }else{
