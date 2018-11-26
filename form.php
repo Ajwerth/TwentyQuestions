@@ -116,36 +116,36 @@ function form_shortcode() {
         <div class="questions-opt">
             <div id="question-twentyone" class="question">
                 <h4>Types of Gambling</h4>
-                <input type="checkbox" id="twentyone-bingo">Bingo</input>
-                <input type="checkbox" id="twentyone-cards">Cards</input>
-                <input type="checkbox" id="twentyone-poker">Casino - Poker</input>
-                <input type="checkbox" id="twentyone-slots">Casino - Slots</input>
-                <input type="checkbox" id="twentyone-table">Casino - Table Games</input>
-                <input type="checkbox" id="twentyone-dice">Dice</input>
-                <input type="checkbox" id="twentyone-horse">Horse Racing</input>
-                <input type="checkbox" id="twentyone-internet">Internet Gambling</input>
-                <input type="checkbox" id="twentyone-lotteries">Lotteries</input>
-                <input type="checkbox" id="twentyone-sports">Sports Betting</input>
-                <input type="checkbox" id="twentyone-stock">Stockmarket</input>
-                <input type="checkbox" id="twentyone-video">Video Machines</input>
-                <input type="checkbox" id="twentyone-other">Other</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="bingo">Bingo</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="cards">Cards</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="poker">Casino - Poker</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="slots">Casino - Slots</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="table">Casino - Table Games</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="dice">Dice</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="horse">Horse Racing</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="internet">Internet Gambling</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="lotteries">Lotteries</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="sports">Sports Betting</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="stocks">Stockmarket</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="video">Video Machines</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="other">Other</input>
             </div>
             <div id="question-twentytwo" class="question">
                 <label for="prefered">Gambling of Choice</label>
                 <select name="prefered" id="prefered">
-                    <option id="twentyone-bingo">Bingo</option>
-                    <option id="twentyone-cards">Cards</option>
-                    <option id="twentyone-poker">Casino - Poker</option>
-                    <option id="twentyone-slots">Casino - Slots</option>
-                    <option id="twentyone-table">Casino - Table Games</option>
-                    <option id="twentyone-dice">Dice</option>
-                    <option id="twentyone-horse">Horse Racing</option>
-                    <option id="twentyone-internet">Internet Gambling</option>
-                    <option id="twentyone-lotteries">Lotteries</option>
-                    <option id="twentyone-sports">Sports Betting</option>
-                    <option id="twentyone-stock">Stockmarket</option>
-                    <option id="twentyone-video">Video Machines</option>
-                    <option id="twentyone-other">Other</>
+                    <option id="twentytwo-bingo">Bingo</option>
+                    <option id="twentytwo-cards">Cards</option>
+                    <option id="twentytwo-poker">Casino - Poker</option>
+                    <option id="twentytwo-slots">Casino - Slots</option>
+                    <option id="twentytwo-table">Casino - Table Games</option>
+                    <option id="twentytwo-dice">Dice</option>
+                    <option id="twentytwo-horse">Horse Racing</option>
+                    <option id="twentytwo-internet">Internet Gambling</option>
+                    <option id="twentytwo-lotteries">Lotteries</option>
+                    <option id="twentytwo-sports">Sports Betting</option>
+                    <option id="twentytwo-stock">Stockmarket</option>
+                    <option id="twentytwo-video">Video Machines</option>
+                    <option id="twentytwo-other">Other</>
                 </select>
             </div>
             <div id="questions-twentythree" class="question"></div>
@@ -202,7 +202,7 @@ function form_shortcode() {
                 </select>
             </div>
         </div>
-        <input type="submit">
+        <input type="submit" id="submit">
     </form>
     <?php
 }

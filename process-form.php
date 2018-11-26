@@ -6,8 +6,10 @@ if(isset($_POST)){
     $table_name = $wpdb->prefix . 'form_submission';
     $timestamp = current_time( 'mysql' );
 
-    var_dump($q_1, $q_20);
+    $gambtype = array();
+    $gambtype[] = implode(',', $_POST['gambtype']);
     $wpdb->insert( $table_name, array(
+        'time_stamp' => $timestamp,
         'question_one' => isset($_POST['q-one-yes']) ? 1 : 0,
         'question_two' => isset($_POST['q-two-yes']) ? 1 : 0,
         'question_three' => isset($_POST['q-three-yes']) ? 1 : 0,
@@ -28,7 +30,7 @@ if(isset($_POST)){
         'question_eightteen' => isset($_POST['q-eightteen-yes']) ? 1 : 0,
         'question_nineteen' => isset($_POST['q-nineteen-yes']) ? 1 : 0, 
         'question_twenty' => isset($_POST['q-twenty-yes']) ? 1 : 0,
-        'question_twentyone' => isset($_POST['q-twenty-yes']) ? 1 : 0,
+        'question_twentyone' => implode(',', $gambtype),
         'question_twentytwo' => $_POST['prefered'],
         'question_twentythree' => $_POST['county'],
         'question_twentyfour' => $_POST['age'],

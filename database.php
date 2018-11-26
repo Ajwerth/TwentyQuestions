@@ -33,7 +33,7 @@ function database_function() {
         question_eightteen int(1) NULL,
         question_nineteen int(1) NULL,
         question_twenty int(1) NULL,
-        question_twentyone int(1) NULL,
+        question_twentyone varchar(50) NOT NULL,
         question_twentytwo varchar(50) NOT NULL,
         question_twentythree varchar(50) NOT NULL,
         question_twentyfour varchar(50) NOT NULL,
