@@ -5,31 +5,32 @@ if(isset($_POST)){
     global $wpdb, $table_prefix;
     $table_name = $wpdb->prefix . 'form_submission';
     $timestamp = current_time( 'mysql' );
-
+    //Set the Gambling Type variable to an arry and passing the data from the Type of Gambling question into the array.
     $gambtype = array();
     $gambtype[] = implode(',', $_POST['gambtype']);
+    //Insert the Data from the form into the Database
     $wpdb->insert( $table_name, array(
         'time_stamp' => $timestamp,
-        'question_one' => isset($_POST['q-one-yes']) ? 1 : 0,
-        'question_two' => isset($_POST['q-two-yes']) ? 1 : 0,
-        'question_three' => isset($_POST['q-three-yes']) ? 1 : 0,
-        'question_four' =>  isset($_POST['q-four-yes']) ? 1 : 0,
-        'question_five' => isset($_POST['q-five-yes']) ? 1 : 0,
-        'question_six' => isset($_POST['q-six-yes']) ? 1 : 0,
-        'question_seven' => isset($_POST['q-seven-yes']) ? 1 : 0,
-        'question_eight' => isset($_POST['q-eight-yes']) ? 1 : 0,
-        'question_nine' => isset($_POST['q-nine-yes']) ? 1 : 0,
-        'question_ten' => isset($_POST['q-ten-yes']) ? 1 : 0,
-        'question_eleven' => isset($_POST['q-eleven-yes']) ? 1 : 0,
-        'question_twelve' => isset($_POST['q-twelve-yes']) ? 1 : 0,
-        'question_thirteen' => isset($_POST['q-thirteen-yes']) ? 1 : 0,
-        'question_fourteen' => isset($_POST['q-fourteen-yes']) ? 1 : 0,
-        'question_fifteen' => isset($_POST['q-fifteen-yes']) ? 1 : 0,
-        'question_sixteen' => isset($_POST['q-sixteen-yes']) ? 1 : 0,
-        'question_seventeen' => isset($_POST['q-seventeen-yes']) ? 1 : 0,
-        'question_eightteen' => isset($_POST['q-eightteen-yes']) ? 1 : 0,
-        'question_nineteen' => isset($_POST['q-nineteen-yes']) ? 1 : 0, 
-        'question_twenty' => isset($_POST['q-twenty-yes']) ? 1 : 0,
+        'question_one' => ( $_POST['question1'] == "yes") ? "Yes" : "No",
+        'question_two' => ( $_POST['question2'] == "yes") ? "Yes" : "No",
+        'question_three' => ( $_POST['question3'] == "yes") ? "Yes" : "No",
+        'question_four' =>  ( $_POST['question4'] == "yes") ? "Yes" : "No",
+        'question_five' => ( $_POST['question5'] == "yes") ? "Yes" : "No",
+        'question_six' => ( $_POST['question6'] == "yes") ? "Yes" : "No",
+        'question_seven' => ( $_POST['question7'] == "yes") ? "Yes" : "No",
+        'question_eight' => ( $_POST['question8'] == "yes") ? "Yes" : "No",
+        'question_nine' => ( $_POST['question9'] == "yes") ? "Yes" : "No",
+        'question_ten' => ( $_POST['question10'] == "yes") ? "Yes" : "No",
+        'question_eleven' => ( $_POST['question11'] == "yes") ? "Yes" : "No",
+        'question_twelve' => ( $_POST['question12'] == "yes") ? "Yes" : "No",
+        'question_thirteen' => ( $_POST['question13'] == "yes") ? "Yes" : "No",
+        'question_fourteen' => ( $_POST['question14'] == "yes") ? "Yes" : "No",
+        'question_fifteen' => ( $_POST['question15'] == "yes") ? "Yes" : "No",
+        'question_sixteen' => ( $_POST['question16'] == "yes") ? "Yes" : "No",
+        'question_seventeen' => ( $_POST['question17'] == "yes") ? "Yes" : "No",
+        'question_eightteen' => ( $_POST['question18'] == "yes") ? "Yes" : "No",
+        'question_nineteen' => ( $_POST['question19'] == "yes") ? "Yes" : "No",
+        'question_twenty' => ( $_POST['question20'] == "yes") ? "Yes" : "No",
         'question_twentyone' => implode(',', $gambtype),
         'question_twentytwo' => $_POST['prefered'],
         'question_twentythree' => $_POST['county'],

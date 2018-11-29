@@ -1,0 +1,14 @@
+
+  
+  .inactive{
+    max-height: 1px;
+  }
+  
+  .active{
+    display: block;
+    height: 500px;
+  }
+
+  #submit{
+      color: red;
+  }
