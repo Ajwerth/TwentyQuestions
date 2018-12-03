@@ -42,17 +42,10 @@ add_action('admin_menu', 'test_plugin_setup_menu');
 add_action( 'wp_enqueue_scripts', 'custom_scripts' );
 add_action( 'wp_enqueue_scripts', 'custom_styles' );
 
-
-add_action( 'init', function() {
-    add_rewrite_endpoint( 'survey-results', EP_PERMALINK );
-} );
-
-
-add_action( 'template_redirect', function() {
-    global $wp_query;
-    if ( ! isset( $wp_query->query_vars['survey-results'] ) ) {
-        return;
+add_filter( 'init', function( $template ) {
+    if ( isset( $_GET['survey-results'] ) ) {
+        $questions = $_GET['survey-results'];
+        include plugin_dir_path( __FILE__ ) . 'templates/survey-results.php';
+        die;
     }
-    include plugin_dir_path( __FILE__ ) . 'templates/survey-results.php';
-    die;
 } );

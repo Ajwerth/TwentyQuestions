@@ -45,21 +45,11 @@ if(isset($_POST)){
     
     //Insert the Data from the form into the Database
     $wpdb->insert( $table_name, $formData );
+    $lastid = $wpdb->insert_id;
     $formDataYes = (array_keys($formData, "Yes"));
-
-    if(sizeof($formDataYes) >= 7){
-
-       ?> 
-        <script>
-        window.location.replace("/survey-results/");
-        </script>
-    <?php
-
-    } else {
-        
-
-
-    }
+    $url = "/?survey-results=". json_encode(sizeof($formDataYes));
+    wp_redirect( $url );
+    exit;
 }else{
     echo "Something's Gone Wrong Mate!";
 };

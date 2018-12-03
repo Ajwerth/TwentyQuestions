@@ -3,7 +3,7 @@
 // Add Shortcode
 function form_shortcode() {
     ?> 
-    <form method="post" action="/wp-content/plugins/twentyquestions/process-form.php">
+    <form method="post" action="/wp-content/plugins/twentyquestions/process-form.php" id="twentyquestions-form">
         <div class="questions-main">
             <div id="question-1"  class="question">
                 <h4>Did you ever lose time from work or school due to gambling?</h4>
