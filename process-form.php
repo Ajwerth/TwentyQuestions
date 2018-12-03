@@ -7,9 +7,13 @@ if(isset($_POST)){
     $timestamp = current_time( 'mysql' );
     //Set the Gambling Type variable to an arry and passing the data from the Type of Gambling question into the array.
     $gambtype = array();
-    $gambtype[] = implode(',', $_POST['gambtype']);
-    //Insert the Data from the form into the Database
-    $wpdb->insert( $table_name, array(
+    if(empty($gambtype)){
+
+    } else {
+        $gambtype[] = implode(',', $_POST['gambtype']);
+    };
+
+    $formData = array(
         'time_stamp' => $timestamp,
         'question_one' => ( $_POST['question1'] == "yes") ? "Yes" : "No",
         'question_two' => ( $_POST['question2'] == "yes") ? "Yes" : "No",
@@ -37,8 +41,25 @@ if(isset($_POST)){
         'question_twentyfour' => $_POST['age'],
         'question_twentyfive' => $_POST['race'],
         'question_twentysix' => $_POST['gender'],
-    ) );
-    echo "Working";
+    );
+    
+    //Insert the Data from the form into the Database
+    $wpdb->insert( $table_name, $formData );
+    $formDataYes = (array_keys($formData, "Yes"));
+
+    if(sizeof($formDataYes) >= 7){
+
+       ?> 
+        <script>
+        window.location.replace("/survey-results/");
+        </script>
+    <?php
+
+    } else {
+        
+
+
+    }
 }else{
     echo "Something's Gone Wrong Mate!";
 };

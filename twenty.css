@@ -1,14 +1,69 @@
 
   
+  h2{
+    font-size: 40px;
+    font-weight: 600;
+  }
+  
   .inactive{
     max-height: 1px;
+    overflow: hidden;
   }
   
   .active{
     display: block;
-    height: 500px;
+    height: auto;
+  }
+
+  select{
+    height: 25px!important;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  form .question, form .opptional{
+    padding: 20px;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+  }
+
+  form .question:first-child{
+    border-top: 2px solid #000;
+    border-radius: 4px 4px 0 0;
+  }
+
+  form .gender{
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+
+  form div:nth-child(even){
+    background-color: #ccc;
+    padding: 20px;
+  }
+
+  form .opptional{
+    background-color: #f7bf23!important;
+  }
+
+  .border-radius_bottom{
+    border-radius: 0 0 4px 4px; 
   }
 
   #submit{
-      color: red;
+    margin: 20px auto;
+    background-color: #f7bf23;
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 4px;
   }
+
+  #question-twentyone{
+  display: flex;
+  flex-direction: column;
+  }
+

@@ -110,7 +110,7 @@ function form_shortcode() {
             <label for="option">Could you answer other optional questions so we can help you?</label>
             <select name="option" id="selectOption">
                 <option value="yes">Yes</option>
-                <option value="no">No</option>
+                <option value="no" selected="selected">No</option>
             </select>
         </div>
         <div id="questions-opt">
@@ -133,6 +133,7 @@ function form_shortcode() {
             <div id="question-twentytwo" class="question">
                 <label for="prefered">Gambling of Choice</label>
                 <select name="prefered" id="prefered">
+                    <option value="N/A" selected="selected">Gambling of Choice</option>
                     <option id="twentytwo-bingo">Bingo</option>
                     <option id="twentytwo-cards">Cards</option>
                     <option id="twentytwo-poker">Casino - Poker</option>
@@ -151,7 +152,8 @@ function form_shortcode() {
             <div id="questions-twentythree" class="question">
                 <label for="county">County</label>
                 <select name="county" id="county">
-                    <option value="Morris" selected="selected">Morris</option>
+                    <option value="N/A" selected="selected">County</option>
+                    <option value="Morris">Morris</option>
                     <option value="Bergen">Bergen</option>
                     <option value="Union">Union</option>
                     <option value="Middlesex">Middlesex</option>
@@ -177,6 +179,7 @@ function form_shortcode() {
             <div id="question-twentyfour" class="question">
                 <label for="age">Age</label>
                 <select name="age" id="age">
+                    <option value="N/A" selected="selected">Age</option>
                     <option value="under18">18 and Under</option>
                     <option value="19to25">19-25</option>
                     <option value="26to55">26-55</option>
@@ -186,6 +189,7 @@ function form_shortcode() {
             <div id="question-twentyfive" class="question">
                 <label for="race">Race</label>
                 <select name="race" id="race">
+                    <option selected="selected" value="N/A">Race</option>
                     <option value="caucasian" selected="selected">Caucasian</option>
                     <option value="african">African American</option>
                     <option value="hispanic">Hispanic</option>
@@ -197,12 +201,13 @@ function form_shortcode() {
             <div id='questions-twentysix' class='gender'>
                 <label for='gender'>Gender</label>
                 <select name="gender" id="gender">
+                    <option value="N/A" selected="selected">Gender</option>
                     <option value="Female">Female</option>
                     <option value="Male">Male</option>
                 </select>
             </div>
         </div>
-        <input type="submit" id="submit">
+        <input type="submit" id="submit" value="submit">
     </form>
     <?php
 }

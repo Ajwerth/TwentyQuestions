@@ -1,16 +1,14 @@
 //Declare our Variables
-let select = document.getElementById('selectOption');
-let collapse = document.getElementById('questions-opt');
+  var select = document.getElementById('selectOption');
+  var collapse = document.getElementById('questions-opt');
+
+
+collapse.className = "inactive";
 
 //If Select Field is Yes - Show if No - Hide 
 select.onchange = function(){
   
-  if(select.value == 'yes'){
-    collapse.className = "active";
-  } else {
-    collapse.className = "inactive";
-  }
-  console.log(select.value);
+  select.value == 'yes' ? collapse.className = "active" : collapse.className = "inactive";
+  
 }
-
 console.log(select.value);
