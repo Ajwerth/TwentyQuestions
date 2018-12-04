@@ -1,1 +1,0 @@
-<p>You have answered Yes to <?php sizeof($formDataYes) ?> out of 20 questions. Our studies show you do not have a gambling problem.</p>
