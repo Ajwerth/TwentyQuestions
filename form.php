@@ -8,53 +8,53 @@ function form_shortcode() {
         <div class="questions-main">
             <div id="question-1"  class="question">
                 <h4>Did you ever lose time from work or school due to gambling?</h4>
-                <input type="radio" id="q-one-yes" name="question1" value="yes" class="messageCheckbox">Yes</input>
-                <input type="radio" id="q-one-no" name="question1" value="no" class="messageCheckbox">No</input>
+                <input type="radio" id="q-one-yes" name="question1" value="yes" class="messageCheckbox" required>Yes</input>
+                <input type="radio" id="q-one-no" name="question1" value="no" class="messageCheckbox" required>No</input>
             </div>
             <div id="question-2"  class="question">
                 <h4>Has gambling ever made your home life unhappy?</h4>
-                <input type="radio" id="q-two-yes" name="question2" value="yes" class="messageCheckbox">Yes</input>
-                <input type="radio" id="q-two-no" name="question2" value="no" class="messageCheckbox">No</input>
+                <input type="radio" id="q-two-yes" name="question2" value="yes" class="messageCheckbox" required>Yes</input>
+                <input type="radio" id="q-two-no" name="question2" value="no" class="messageCheckbox" required>No</input>
             </div>
             <div id="question-3"  class="question">
                 <h4>Did gambling affect your reputation?</h4>
-                <input type="radio" id="q-three-yes" name="question3" value="yes" class="messageCheckbox">Yes</input>
-                <input type="radio" id="q-three-no" name="question3" value="no" class="messageCheckbox">No</input>
+                <input type="radio" id="q-three-yes" name="question3" value="yes" class="messageCheckbox" required>Yes</input>
+                <input type="radio" id="q-three-no" name="question3" value="no" class="messageCheckbox" required>No</input>
             </div>
             <div id="question-4"  class="question">
                 <h4>Have you ever felt remorse after gambling?</h4>
-                <input type="radio" id="q-four-yes" name="question4" value="yes" class="messageCheckbox">Yes</input>
-                <input type="radio" id="q-four-no" name="question4" value="no" class="messageCheckbox">No</input>
+                <input type="radio" id="q-four-yes" name="question4" value="yes" class="messageCheckbox" required>Yes</input>
+                <input type="radio" id="q-four-no" name="question4" value="no" class="messageCheckbox" required>No</input>
             </div>
             <div id="question-5"  class="question">
                 <h4>Did you ever gamble to get money with which to pay debts or otherwise solve financial difficulties?</h4>
-                <input type="radio" id="q-five-yes" name="question5" value="yes" class="messageCheckbox">Yes</input>
-                <input type="radio" id="q-five-no" name="question5" value="no" class="messageCheckbox">No</input>
+                <input type="radio" id="q-five-yes" name="question5" value="yes" class="messageCheckbox" required>Yes</input>
+                <input type="radio" id="q-five-no" name="question5" value="no" class="messageCheckbox" required>No</input>
             </div>
             <div id="question-6"  class="question">
                 <h4>Did gambling cause a decrease in your ambition or efficiency?</h4>
-                <input type="radio" id="q-six-yes" name="question6" value="yes" class="messageCheckbox">Yes</input>
-                <input type="radio" id="q-six-no" name="question6" value="no" class="messageCheckbox">No</input>
+                <input type="radio" id="q-six-yes" name="question6" value="yes" class="messageCheckbox" required>Yes</input>
+                <input type="radio" id="q-six-no" name="question6" value="no" class="messageCheckbox" required>No</input>
             </div>
             <div id="question-7"  class="question">
                 <h4>After losing, did you feel you must return as soon as possible and win back your losses?</h4>
-                <input type="radio" id="q-seven-yes" name="question7" value="yes" class="messageCheckbox">Yes</input>
-                <input type="radio" id="q-seven-no" name="question7" value="no" class="messageCheckbox">No</input>
+                <input type="radio" id="q-seven-yes" name="question7" value="yes" class="messageCheckbox" required>Yes</input>
+                <input type="radio" id="q-seven-no" name="question7" value="no" class="messageCheckbox" required>No</input>
             </div>
             <div id="question-8"  class="question">
                 <h4>After a win, did you have a strong urge to return and win more?</h4>
-                <input type="radio" id="q-eight-yes" name="question8" value="yes" class="messageCheckbox">Yes</input>
-                <input type="radio" id="q-eight-no" name="question8" value="no" class="messageCheckbox">No</input>
+                <input type="radio" id="q-eight-yes" name="question8" value="yes" class="messageCheckbox" required>Yes</input>
+                <input type="radio" id="q-eight-no" name="question8" value="no" class="messageCheckbox" required>No</input>
             </div>
             <div id="question-9"  class="question">
                 <h4>Did you often gamble until your last dollar was gone?</h4>
-                <input type="radio" id="q-nine-yes" name="question9" value="yes" class="messageCheckbox">Yes</input>
-                <input type="radio" id="q-nine-no" name="question9" value="no" class="messageCheckbox">No</input>
+                <input type="radio" id="q-nine-yes" name="question9" value="yes" class="messageCheckbox" required>Yes</input>
+                <input type="radio" id="q-nine-no" name="question9" value="no" class="messageCheckbox" required>No</input>
             </div>
             <div id="question-10"  class="question">
                 <h4>Did you ever borrow to finance your gambling?</h4>
-                <input type="radio" id="q-ten-yes" name="question10" value="yes" class="messageCheckbox">Yes</input>
-                <input type="radio" id="q-ten-no" name="question10" value="no" class="messageCheckbox">No</input>
+                <input type="radio" id="q-ten-yes" name="question10" value="yes" class="messageCheckbox" required>Yes</input>
+                <input type="radio" id="q-ten-no" name="question10" value="no" class="messageCheckbox" required>No</input>
             </div>
             <div id="question-11"  class="question">
                 <h4>Have you ever sold anything to finance gambling?</h4>
@@ -117,19 +117,58 @@ function form_shortcode() {
         <div id="questions-opt">
             <div id="question-twentyone" class="question">
                 <h4>Types of Gambling</h4>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="bingo-">Bingo</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="cards-">Cards</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="poker-">Casino - Poker</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="slots-">Casino - Slots</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="table-">Casino - Table Games</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="dice-">Dice</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="horse-">Horse Racing</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="internet-">Internet Gambling</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="lotteries">Lotteries</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="sports-">Sports Betting</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="stocks">Stockmarket</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="video-">Video Machines</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="other-">Other</input>
+                <div class="qtwentyone-feild">
+                    <input type="checkbox" id="twentyone" name="gambtype[]" value="bingo-">
+                    <label>Bingo</label>
+                </div>
+                <div class="qtwentyone-feild">
+                    <input type="checkbox" id="twentyone" name="gambtype[]" value="cards-">
+                    <label>Cards</label>
+                </div>
+                <div class="qtwentyone-feild">
+                    <input type="checkbox" id="twentyone" name="gambtype[]" value="poker-">
+                    <label>Casino - Poker</label>
+                </div>
+                <div class="qtwentyone-feild">
+                    <input type="checkbox" id="twentyone" name="gambtype[]" value="slots-">
+                    <label>Casino - Slots</label>
+                </div>
+                <div class="qtwentyone-feild">
+                    <input type="checkbox" id="twentyone" name="gambtype[]" value="table-">
+                    <label>Casino - Table Games</label>
+                </div>
+                <div class="qtwentyone-feild">
+                    <input type="checkbox" id="twentyone" name="gambtype[]" value="dice-">
+                    <label>Dice</label>
+                </div>
+                <div class="qtwentyone-feild">
+                    <input type="checkbox" id="twentyone" name="gambtype[]" value="horse-">
+                    <label>Horse Racing</label>
+                </div>
+                <div class="qtwentyone-feild">
+                    <input type="checkbox" id="twentyone" name="gambtype[]" value="internet-">
+                    <label>Internet Gambling</label>
+                </div>
+                <div class="qtwentyone-feild">
+                    <input type="checkbox" id="twentyone" name="gambtype[]" value="lotteries">
+                    <label>Lotteries</label>
+                </div>
+                <div class="qtwentyone-feild">
+                    <input type="checkbox" id="twentyone" name="gambtype[]" value="sports-">
+                    <label>Sports Betting</label>
+                </div>
+                <div class="qtwentyone-feild">
+                    <input type="checkbox" id="twentyone" name="gambtype[]" value="stocks">
+                    <label>Stockmarket</label>
+                </div>
+                <div class="qtwentyone-feild">
+                    <input type="checkbox" id="twentyone" name="gambtype[]" value="video-">
+                    <label>Video Machines</label>
+                </div>
+                <div class="qtwentyone-feild">
+                    <input type="checkbox" id="twentyone" name="gambtype[]" value="other-">
+                    <label>Other</label>
+                </div>
             </div>
             <div id="question-twentytwo" class="question">
                 <label for="prefered">Gambling of Choice</label>

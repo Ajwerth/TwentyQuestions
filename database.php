@@ -6,7 +6,7 @@ function database_function() {
     global $wpdb;
     global $aw_db_version;
 
-    $tablename = $wpdb->prefix . "form_submission";
+    $tablename = $wpdb->prefix . "twenty_questions";
     $charset_collate = $wpdb->get_charset_collate();
 
     $sql="CREATE TABLE $tablename (

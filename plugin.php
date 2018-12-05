@@ -11,11 +11,11 @@ include(plugin_dir_path(__FILE__) . "/database.php");
 register_activation_hook(__FILE__, "database_function");
 require_once(plugin_dir_path(__FILE__) . "/form.php");
 
-//Create Admin Page
-function test_plugin_setup_menu(){
-        add_menu_page( 'Twenty Questions', 'Twenty Questions', 'manage_options', 'twenty-questions', 'test_init', $icon_url = '
-        dashicons-welcome-write-blog');
-}
+// //Create Admin Page
+// function test_plugin_setup_menu(){
+//         add_menu_page( 'Twenty Questions', 'Twenty Questions', 'manage_options', 'twenty-questions', 'test_init', $icon_url = '
+//         dashicons-welcome-write-blog');
+// }
 
 function test_init(){
     echo '<h1>Twenty Questions</h1>
@@ -37,8 +37,10 @@ function custom_styles() {
 	wp_enqueue_style( 'twentycss' );
 }
 
-//Adding Menu Page in the Admin Panel
-add_action('admin_menu', 'test_plugin_setup_menu');
+// //Adding Menu Page in the Admin Panel
+// add_action('admin_menu', 'test_plugin_setup_menu');
+
+//Add Scripts
 add_action( 'wp_enqueue_scripts', 'custom_scripts' );
 add_action( 'wp_enqueue_scripts', 'custom_styles' );
 
