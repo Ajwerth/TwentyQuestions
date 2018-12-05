@@ -8,103 +8,103 @@ function form_shortcode() {
         <div class="questions-main">
             <div id="question-1"  class="question">
                 <h4>Did you ever lose time from work or school due to gambling?</h4>
-                <input type="radio" id="q-one-yes" name="question1" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-one-no" name="question1" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-one-yes" name="question1" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-one-no" name="question1" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-2"  class="question">
                 <h4>Has gambling ever made your home life unhappy?</h4>
-                <input type="radio" id="q-two-yes" name="question2" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-two-no" name="question2" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-two-yes" name="question2" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-two-no" name="question2" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-3"  class="question">
                 <h4>Did gambling affect your reputation?</h4>
-                <input type="radio" id="q-three-yes" name="question3" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-three-no" name="question3" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-three-yes" name="question3" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-three-no" name="question3" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-4"  class="question">
                 <h4>Have you ever felt remorse after gambling?</h4>
-                <input type="radio" id="q-four-yes" name="question4" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-four-no" name="question4" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-four-yes" name="question4" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-four-no" name="question4" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-5"  class="question">
                 <h4>Did you ever gamble to get money with which to pay debts or otherwise solve financial difficulties?</h4>
-                <input type="radio" id="q-five-yes" name="question5" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-five-no" name="question5" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-five-yes" name="question5" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-five-no" name="question5" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-6"  class="question">
                 <h4>Did gambling cause a decrease in your ambition or efficiency?</h4>
-                <input type="radio" id="q-six-yes" name="question6" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-six-no" name="question6" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-six-yes" name="question6" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-six-no" name="question6" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-7"  class="question">
                 <h4>After losing, did you feel you must return as soon as possible and win back your losses?</h4>
-                <input type="radio" id="q-seven-yes" name="question7" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-seven-no" name="question7" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-seven-yes" name="question7" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-seven-no" name="question7" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-8"  class="question">
                 <h4>After a win, did you have a strong urge to return and win more?</h4>
-                <input type="radio" id="q-eight-yes" name="question8" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-eight-no" name="question8" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-eight-yes" name="question8" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-eight-no" name="question8" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-9"  class="question">
                 <h4>Did you often gamble until your last dollar was gone?</h4>
-                <input type="radio" id="q-nine-yes" name="question9" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-nine-no" name="question9" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-nine-yes" name="question9" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-nine-no" name="question9" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-10"  class="question">
                 <h4>Did you ever borrow to finance your gambling?</h4>
-                <input type="radio" id="q-ten-yes" name="question10" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-ten-no" name="question10" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-ten-yes" name="question10" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-ten-no" name="question10" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-11"  class="question">
                 <h4>Have you ever sold anything to finance gambling?</h4>
-                <input type="radio" id="q-eleven-yes" name="question11" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-eleven-no" name="question11" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-eleven-yes" name="question11" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-eleven-no" name="question11" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-12"  class="question">
                 <h4>Were you reluctant to use "gambling money" for normal expenditures?</h4>
-                <input type="radio" id="q-twelve-yes" name="question12" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-twelve-no" name="question12" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-twelve-yes" name="question12" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-twelve-no" name="question12" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-13"  class="question">
                 <h4>Did gambling make you careless of the welfare of yourself and your family?</h4>
-                <input type="radio" id="q-thirteen-yes" name="question13" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-thirteen-no" name="question13" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-thirteen-yes" name="question13" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-thirteen-no" name="question13" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-14"  class="question">
                 <h4>Did you ever gamble longer than you had planned?</h4>
-                <input type="radio" id="q-fourteen-yes" name="question14" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-fourteen-no" name="question14" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-fourteen-yes" name="question14" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-fourteen-no" name="question14" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-15"  class="question">
                 <h4>Have you ever gambled to escape worry or trouble?</h4>
-                <input type="radio" id="q-fifteen-yes" name="question15" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-fifteen-no" name="question15" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-fifteen-yes" name="question15" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-fifteen-no" name="question15" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-16"  class="question">
                 <h4>Have you ever committed, or considered committing, an illegal act to finance gambling?</h4>
-                <input type="radio" id="q-sixteen-yes" name="question16" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-sixteen-no" name="question16" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-sixteen-yes" name="question16" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-sixteen-no" name="question16" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-17"  class="question">
                 <h4>Did gambling cause difficulty in sleeping?</h4>
-                <input type="radio" id="q-seventeen-yes" name="question17" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-seventeen-no" name="question17" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-seventeen-yes" name="question17" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-seventeen-no" name="question17" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-18"  class="question">
                 <h4>Do arguments, disappointments or frustrations create within you an urge to gamble?</h4>
-                <input type="radio" id="q-eightteen-yes" name="question18" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-eightteen-no" name="question18" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-eightteen-yes" name="question18" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-eightteen-no" name="question18" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-19"  class="question">
                 <h4>Did you ever have an urge to celebrate any good fortune by a few hours of gambling?</h4>
-                <input type="radio" id="q-nineteen-yes" name="question19" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-nineteen-no" name="question19" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-nineteen-yes" name="question19" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-nineteen-no" name="question19" value="no" class="messageCheckbox">No</input>
             </div>
             <div id="question-20"  class="question">
                 <h4>Have you ever considered self destruction or suicide as a result of your gambling?</h4>
-                <input type="radio" id="q-twenty-yes" name="question20" value="yes" class="messageCheckbox" required>Yes</input>
-                <input type="radio" id="q-twenty-no" name="question20" value="no" class="messageCheckbox" required>No</input>
+                <input type="radio" id="q-twenty-yes" name="question20" value="yes" class="messageCheckbox">Yes</input>
+                <input type="radio" id="q-twenty-no" name="question20" value="no" class="messageCheckbox">No</input>
             </div>
         </div>
         <div class="opptional">
@@ -117,19 +117,19 @@ function form_shortcode() {
         <div id="questions-opt">
             <div id="question-twentyone" class="question">
                 <h4>Types of Gambling</h4>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="bingo">Bingo</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="cards">Cards</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="poker">Casino - Poker</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="slots">Casino - Slots</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="table">Casino - Table Games</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="dice">Dice</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="horse">Horse Racing</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="internet">Internet Gambling</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="bingo-">Bingo</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="cards-">Cards</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="poker-">Casino - Poker</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="slots-">Casino - Slots</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="table-">Casino - Table Games</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="dice-">Dice</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="horse-">Horse Racing</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="internet-">Internet Gambling</input>
                 <input type="checkbox" id="twentyone" name="gambtype[]" value="lotteries">Lotteries</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="sports">Sports Betting</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="sports-">Sports Betting</input>
                 <input type="checkbox" id="twentyone" name="gambtype[]" value="stocks">Stockmarket</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="video">Video Machines</input>
-                <input type="checkbox" id="twentyone" name="gambtype[]" value="other">Other</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="video-">Video Machines</input>
+                <input type="checkbox" id="twentyone" name="gambtype[]" value="other-">Other</input>
             </div>
             <div id="question-twentytwo" class="question">
                 <label for="prefered">Gambling of Choice</label>

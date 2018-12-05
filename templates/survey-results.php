@@ -1,4 +1,15 @@
 <?php
+/**
+ * The template used for displaying page content
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fifteen
+ * @since Twenty Fifteen 1.0
+ */
+
+get_header();
+
+
 $queryURL = parse_url( html_entity_decode( esc_url( add_query_arg( $arr_params ) ) ) );
 parse_str( $queryURL['query'], $getVar );
 $surveyResults = $getVar['survey-results'];
@@ -20,7 +31,10 @@ G<p>amblers Anonymous meetings in New Jersey (searchable by county) by following
 Give us a call: 800-GAMBLER</p>
 
 <?php } else { ?>
+
 <p>You have answered Yes to <?php echo $surveyResults ?> out of 20 questions. Our studies show you do not have a gambling problem.</p>
 
 <?php
 };
+
+get_footer();
